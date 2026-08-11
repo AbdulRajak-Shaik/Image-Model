@@ -6,7 +6,7 @@ services:
     plan: standard          # Minimum plan needed — free tier (512MB) is too small for PyTorch
     rootDir: .
     buildCommand: pip install -r VeriFakeNet/requirements.txt
-    startCommand: streamlit run VeriFakeNet/streamlit_app/app.py --server.port $PORT --server.headless true --server.enableCORS false --server.enableXsrfProtection false
+    startCommand: streamlit run VeriFakeNet/streamlit_app/app.py --server.port $PORT
     healthCheckPath: /
 
     # Environment variables — set these in Render dashboard
