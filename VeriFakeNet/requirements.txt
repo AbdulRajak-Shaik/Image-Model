@@ -1,18 +1,34 @@
-torch>=2.0.0
-torchvision>=0.15.0
-torchaudio>=2.0.0
-numpy
-pandas
-scikit-learn
-opencv-python
-opencv-contrib-python
-Pillow
-matplotlib
-streamlit
-facenet-pytorch
-efficientnet_pytorch
-grad-cam
-imagehash
-fpdf2
-PyExifTool
-tqdm
+# ─── Deep Learning (CPU-only for cloud deployment) ───────────────────────────
+# Uses CPU wheels to avoid the 2GB+ GPU packages on Render
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.2.2+cpu
+torchvision==0.17.2+cpu
+
+# ─── Computer Vision ─────────────────────────────────────────────────────────
+numpy>=1.24.0
+opencv-python-headless>=4.8.0
+Pillow>=10.0.0
+imagehash>=4.3.1
+
+# ─── Face Detection ──────────────────────────────────────────────────────────
+facenet-pytorch>=2.5.3
+mtcnn>=0.1.1
+
+# ─── Data & ML ───────────────────────────────────────────────────────────────
+scikit-learn>=1.3.0
+pandas>=2.0.0
+
+# ─── Streamlit UI ────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ─── AI Explainability (Groq) ────────────────────────────────────────────────
+groq>=0.9.0
+openai>=1.30.0
+python-dotenv>=1.0.0
+
+# ─── Forensics & Reporting ───────────────────────────────────────────────────
+fpdf2>=2.7.9
+
+# ─── Utilities ───────────────────────────────────────────────────────────────
+tqdm>=4.65.0
+requests>=2.31.0

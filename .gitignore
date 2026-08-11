@@ -59,7 +59,8 @@ desktop.ini
 *.ipynb
 
 # ─── Streamlit cache ─────────────────────────────────────────────────────────
-.streamlit/
+.streamlit/secrets.toml
+# Note: .streamlit/config.toml IS committed (needed for Render deployment)
 
 # ─── Temp / test artifacts ───────────────────────────────────────────────────
 tmp/
