@@ -1,0 +1,68 @@
+# ─── Secrets & Environment ───────────────────────────────────────────────────
+.env
+*.key
+*.pem
+secrets/
+
+# ─── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+pip-wheel-metadata/
+
+# ─── Virtual Environments ────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ─── Model Weights (large binary files) ──────────────────────────────────────
+*.pth
+*.pt
+*.h5
+*.ckpt
+*.safetensors
+models/*.pth
+models/*.pt
+
+# ─── Datasets ────────────────────────────────────────────────────────────────
+datasets/
+data/
+*.csv
+*.zip
+*.tar
+*.tar.gz
+
+# ─── Output files ────────────────────────────────────────────────────────────
+outputs/
+logs/
+*.log
+
+# ─── IDE & OS ────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Jupyter Notebooks ───────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ─── Streamlit cache ─────────────────────────────────────────────────────────
+.streamlit/
+
+# ─── Temp / test artifacts ───────────────────────────────────────────────────
+tmp/
+temp/
+*.tmp
+test_output.pdf
