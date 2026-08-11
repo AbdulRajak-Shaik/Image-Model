@@ -1,7 +1,7 @@
 # ─── Deep Learning (CPU-only for cloud deployment) ───────────────────────────
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.13.0+cpu
-torchvision==0.20.1+cpu
+torchvision==0.28.0+cpu
 
 # ─── Computer Vision ─────────────────────────────────────────────────────────
 numpy>=1.24.0
